@@ -1,0 +1,153 @@
+.App {
+    background-color: #BFBDC7;
+}
+
+.App-header {
+    margin-bottom: 10px;
+    nav {
+        ul {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+            background-color: #CEE0DC;
+            justify-content: center;
+            box-shadow: 0px 1px 4px 3px #888888;
+            li {
+                box-sizing: border-box;
+                padding: 20px;
+                font-size: 16px;
+                border-bottom: 5px solid #CEE0DC;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover {
+                    background-color: #fff;
+                    border-bottom: 5px solid #593640;
+                    cursor: pointer;
+                }
+            }
+            &:hover {   
+                box-shadow: 1px 1px 8px 3px #444;
+            }
+        }
+    }
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+    margin: 12px;
+    .img-container {
+        background-image: url('./assets/photo.jpg');
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10vh;
+        border: 5px solid #888;
+        border-radius: 50%;
+    }
+    
+
+    .css-typing {
+        position: absolute;
+        top: 55vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .css-typing p {
+        border-right: .15em solid orange;
+        font-family: "Courier";
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .css-typing p:nth-child(1) {
+        width: 45.5em;
+        -webkit-animation: type 2s steps(40, end);
+        animation: type 2s steps(40, end);
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      
+      .css-typing p:nth-child(2) {
+        width: 45.5em;
+        opacity: 0;
+        -webkit-animation: type2 2s steps(40, end);
+        animation: type2 2s steps(40, end);
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      
+      @keyframes type {
+        0% {
+          width: 0;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          border: none;
+        }
+      }
+      
+      @-webkit-keyframes type {
+        0% {
+          width: 0;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          border: none;
+        }
+      }
+      
+      @keyframes type2 {
+        0% {
+          width: 0;
+        }
+        1% {
+          opacity: 1;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          opacity: 1;
+          border: none;
+        }
+      }
+      
+      @-webkit-keyframes type2 {
+        0% {
+          width: 0;
+        }
+        1% {
+          opacity: 1;
+        }
+        99.9% {
+          border-right: .15em solid orange;
+        }
+        100% {
+          opacity: 1;
+          border: none;
+        }
+      }
+      
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      @-webkit-keyframes blink {
+        50% {
+          border-color: tranparent;
+        }
+      }
+    }

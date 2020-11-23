@@ -1,23 +1,28 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import pp from './assets/photo.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <nav>
+          <ul>
+            <li><a>Work Experience</a></li>
+            <li><a>Personal Projects</a></li>
+            <li><a>Skillsets</a></li>
+            <li><a>Article Blogs</a></li>
+            <li><a>Contact Me</a></li>
+          </ul>
+        </nav>
       </header>
+      <main>
+        <div className="img-container"></div>
+        <div className="css-typing">
+          <p>I am a 2.5 years experienced Front end web developer with hands on skills</p>
+          <p>in React, Angular, Node JS, HTML5, CSS, SCSS, Bootstarp, JavaScript, jQuery.</p>
+        </div>
+      </main>
     </div>
   );
 }
