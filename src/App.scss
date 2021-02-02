@@ -1,15 +1,19 @@
+$header-color: #1b242f;
+
 .App {
-    background-color: #BFBDC7;
+  background: url('./assets/mainpage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
 .App-header {
-    margin-bottom: 10px;
     nav {
         ul {
             margin: 0;
             display: flex;
             list-style-type: none;
-            background-color: #CEE0DC;
+            background-color: $header-color;
             justify-content: center;
             box-shadow: 0px 1px 4px 3px #888888;
             li {
@@ -19,11 +23,8 @@
                 border-bottom: 5px solid #CEE0DC;
                 text-transform: uppercase;
                 font-weight: 600;
-                &:hover {
-                    background-color: #fff;
-                    border-bottom: 5px solid #593640;
-                    cursor: pointer;
-                }
+                color: white;
+                cursor: pointer;
             }
             &:hover {   
                 box-shadow: 1px 1px 8px 3px #444;
@@ -35,38 +36,54 @@
 main {
     position: relative;
     height: 100vh;
-    background-color: #fff;
-    margin: 12px;
+    position: absolute;
+    left: 20%;
+    top: 22vh;
     .img-container {
         background-image: url('./assets/photo.jpg');
         background-repeat: no-repeat;
         height: 150px;
         width: 150px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 10vh;
-        border: 5px solid #888;
+        border: 5px solid $header-color;
         border-radius: 50%;
     }
-    
+    .intro {
+      padding: 35px 40px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .links {
+      padding-top: 30px;
+      span {
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+          fill: red;
+        }
+      }
+    }
 
     .css-typing {
         position: absolute;
-        top: 55vh;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 12vh;
+        left: 18vw;
     }
 
     .css-typing p {
         border-right: .15em solid orange;
         font-family: "Courier";
-        font-size: 14px;
+        font-size: 17px;
+        font-weight: 700;
         white-space: nowrap;
         overflow: hidden;
       }
       .css-typing p:nth-child(1) {
-        width: 45.5em;
+        width: 32em;
         -webkit-animation: type 2s steps(40, end);
         animation: type 2s steps(40, end);
         -webkit-animation-fill-mode: forwards;
@@ -74,7 +91,7 @@ main {
       }
       
       .css-typing p:nth-child(2) {
-        width: 45.5em;
+        width: 15em;
         opacity: 0;
         -webkit-animation: type2 2s steps(40, end);
         animation: type2 2s steps(40, end);
@@ -83,7 +100,32 @@ main {
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
+
+      .css-typing p:nth-child(3) {
+        font-size: 20px;
+        color: $header-color;
+        width: 22em;
+        opacity: 0;
+        -webkit-animation: type2 2s steps(40, end);
+        animation: type2 2s steps(40, end);
+        -webkit-animation-delay: 2s;
+        animation-delay: 4s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
       
+      .css-typing p:nth-child(4) {
+        font-size: 20px;
+        color: $header-color;
+        width: 22em;
+        opacity: 0;
+        -webkit-animation: type2 2s steps(40, end);
+        animation: type2 2s steps(40, end);
+        -webkit-animation-delay: 2s;
+        animation-delay: 6s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
       @keyframes type {
         0% {
           width: 0;
