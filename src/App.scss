@@ -1,4 +1,5 @@
 $header-color: #1b242f;
+$main-blue: #04c2c9;
 
 .App {
   background: url('./assets/mainpage.jpg');
@@ -62,8 +63,11 @@ main {
       span {
         padding: 10px;
         cursor: pointer;
-        &:hover {
-          fill: red;
+        img {
+          &:hover {
+            background-color: $main-blue;
+            border-radius: 30px;
+          }
         }
       }
     }
