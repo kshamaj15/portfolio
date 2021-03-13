@@ -1,199 +1,26 @@
-$header-color: #1b242f;
-$main-blue: #04c2c9;
+$dark: #0a0a0a;
 
-// .App {
-//   background: url('./assets/mainpage.jpg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 90vh;
-// }
-
-.App-header {
-    nav {
-        ul {
-            margin: 0;
-            display: flex;
-            list-style-type: none;
-            background-color: $header-color;
-            justify-content: center;
-            box-shadow: 0px 1px 4px 3px #888888;
-            li {
-                box-sizing: border-box;
-                padding: 20px;
-                font-size: 16px;
-                border-bottom: 5px solid #CEE0DC;
-                text-transform: uppercase;
-                font-weight: 600;
-                color: white;
-                cursor: pointer;
-            }
-            &:hover {   
-                box-shadow: 1px 1px 8px 3px #444;
-            }
+.App {
+    &-header {
+        background-color: $dark;
+        box-shadow: 4px 4px 8px 1px #686686;
+    }
+    .nav-link {
+        color: #fff !important;
+        font-size: 20px;
+        padding: 1rem !important;
+        &:active{
+            font-size: 20px;
+            border-bottom: 0.3rem solid #fff;
+        }
+        &:hover{
+            font-size: 20px;
+            border-bottom: 0.3rem solid #fff;
         }
     }
+    .nav-link.active {
+        font-size: 20px;
+        border-bottom: 0.3rem solid #fff;
+    }
+    
 }
-
-// main {
-//     position: relative;
-//     height: 100vh;
-//     position: absolute;
-//     left: 20%;
-//     top: 22vh;
-//     .img-container {
-//         background-image: url('./assets/photo.jpg');
-//         background-repeat: no-repeat;
-//         height: 150px;
-//         width: 150px;
-//         border: 5px solid $header-color;
-//         border-radius: 50%;
-//     }
-//     .intro {
-//       padding: 35px 40px;
-//       text-align: center;
-//       font-size: 24px;
-//       font-weight: 600;
-//       p {
-//         margin-bottom: 0;
-//       }
-//     }
-
-//     .links {
-//       padding-top: 30px;
-//       span {
-//         padding: 10px;
-//         cursor: pointer;
-//         img {
-//           &:hover {
-//             background-color: $main-blue;
-//             border-radius: 30px;
-//           }
-//         }
-//       }
-//     }
-
-//     .css-typing {
-//         position: absolute;
-//         top: 12vh;
-//         left: 18vw;
-//     }
-
-//     .css-typing p {
-//         border-right: .15em solid orange;
-//         font-family: "Courier";
-//         font-size: 17px;
-//         font-weight: 700;
-//         white-space: nowrap;
-//         overflow: hidden;
-//       }
-//       .css-typing p:nth-child(1) {
-//         width: 32em;
-//         -webkit-animation: type 2s steps(40, end);
-//         animation: type 2s steps(40, end);
-//         -webkit-animation-fill-mode: forwards;
-//         animation-fill-mode: forwards;
-//       }
-      
-//       .css-typing p:nth-child(2) {
-//         width: 15em;
-//         opacity: 0;
-//         -webkit-animation: type2 2s steps(40, end);
-//         animation: type2 2s steps(40, end);
-//         -webkit-animation-delay: 2s;
-//         animation-delay: 2s;
-//         -webkit-animation-fill-mode: forwards;
-//         animation-fill-mode: forwards;
-//       }
-
-//       .css-typing p:nth-child(3) {
-//         font-size: 20px;
-//         color: $header-color;
-//         width: 22em;
-//         opacity: 0;
-//         -webkit-animation: type2 2s steps(40, end);
-//         animation: type2 2s steps(40, end);
-//         -webkit-animation-delay: 2s;
-//         animation-delay: 4s;
-//         -webkit-animation-fill-mode: forwards;
-//         animation-fill-mode: forwards;
-//       }
-      
-//       .css-typing p:nth-child(4) {
-//         font-size: 20px;
-//         color: $header-color;
-//         width: 22em;
-//         opacity: 0;
-//         -webkit-animation: type2 2s steps(40, end);
-//         animation: type2 2s steps(40, end);
-//         -webkit-animation-delay: 2s;
-//         animation-delay: 6s;
-//         -webkit-animation-fill-mode: forwards;
-//         animation-fill-mode: forwards;
-//       }
-//       @keyframes type {
-//         0% {
-//           width: 0;
-//         }
-//         99.9% {
-//           border-right: .15em solid orange;
-//         }
-//         100% {
-//           border: none;
-//         }
-//       }
-      
-//       @-webkit-keyframes type {
-//         0% {
-//           width: 0;
-//         }
-//         99.9% {
-//           border-right: .15em solid orange;
-//         }
-//         100% {
-//           border: none;
-//         }
-//       }
-      
-//       @keyframes type2 {
-//         0% {
-//           width: 0;
-//         }
-//         1% {
-//           opacity: 1;
-//         }
-//         99.9% {
-//           border-right: .15em solid orange;
-//         }
-//         100% {
-//           opacity: 1;
-//           border: none;
-//         }
-//       }
-      
-//       @-webkit-keyframes type2 {
-//         0% {
-//           width: 0;
-//         }
-//         1% {
-//           opacity: 1;
-//         }
-//         99.9% {
-//           border-right: .15em solid orange;
-//         }
-//         100% {
-//           opacity: 1;
-//           border: none;
-//         }
-//       }
-      
-//       @keyframes blink {
-//         50% {
-//           border-color: transparent;
-//         }
-//       }
-//       @-webkit-keyframes blink {
-//         50% {
-//           border-color: tranparent;
-//         }
-//       }
-//     }
