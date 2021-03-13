@@ -3,30 +3,27 @@ import linkedin from './assets/linkedin.svg';
 import instagram from './assets/instagram.svg';
 import gmail from './assets/gmail.svg';
 import github from './assets/github.svg';
+import Avatar from '@material-ui/core/Avatar';
+import WorkExp from './tabs/WorkExp/WorkExp';
 // import linkedin from './assets/linkedin.svg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <nav>
+      {/* <header className="App-header">
+        <nav id="navbar-list">
           <ul>
-            <li><a>Work Experience</a></li>
-            <li><a>Personal Projects</a></li>
-            <li><a>Skillsets</a></li>
-            <li><a>Article Blogs</a></li>
-            <li><a>Contact Me</a></li>
+            <li><a href="#work-exp">Work Experience</a></li>
+            <li><a href="#projects">Personal Projects</a></li>
+            <li><a href="#skills">Skillsets</a></li>
+            <li><a href="#articles">Article Blogs</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
         </nav>
-      </header>
-      <main>
-        {/* <div className="css-typing">
-          <p>I am a 2.5 years experienced Front end web developer</p>
-          <p>with hands on skills in</p>
-          <p>React, Angular, Node JS, HTML5, CSS</p>
-          <p>SCSS, Bootstarp, JavaScript, jQuery.</p>
-        </div> */}
-        <div style={{display: 'flex'}}>
+      </header> */}
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+      {/* <main style={{height: '100vh'}}>
+         <div style={{display: 'flex'}}>
           <div className="img-container"></div>
           <div className="intro">
             <p>Hi, I am Kshama Jain</p>
@@ -40,7 +37,18 @@ function App() {
           <span><img width="60px" src={github}/></span>
           <span><img width="60px" src={linkedin}/></span>
         </div>
-      </main>
+      </main>  */}
+
+      
+        <section id="work-exp">
+          <WorkExp></WorkExp>
+        </section>
+
+        <section id="projects">
+          <h3>Personal Projects</h3>
+          <p></p>
+        </section>
+      </div>
     </div>
   );
 }
