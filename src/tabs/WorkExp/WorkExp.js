@@ -1,30 +1,17 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Container from '@material-ui/core/Container';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
-    paper: {
-      height: 140,
-      width: 100,
-    },
-    control: {
-      padding: theme.spacing(2),
-    },
-  }));
+import './WorkExp.scss';
+import homeImg from '../../assets/photo.jpg';
 
 const WorkExp = () => {
-    const [spacing, setSpacing] = React.useState(2);
-    const classes = useStyles();
     return (
-        <Grid container className={classes.root} spacing={2}>
-            <Paper elevation={3}></Paper>
-        </Grid>
+        <div className="mx-3 tab tab-work-exp" style={{height: '100vh'}}>
+          <div className="intro">
+            <img src={homeImg} alt="Kshama Jain"/>
+            <p>My name is</p>
+            <h1>KSHAMA JAIN</h1>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
     )
 }
 

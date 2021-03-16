@@ -7,6 +7,8 @@ import logo from './assets/logo.png';
 import $ from 'jquery'; 
 import Avatar from '@material-ui/core/Avatar';
 import { useEffect } from 'react';
+import WorkExp from './tabs/WorkExp/WorkExp';
+import Projects from './tabs/Projects/Projects';
 // import linkedin from './assets/linkedin.svg';
 
 function App() {
@@ -23,8 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <nav id="navbar" className="navbar navbar-expand-lg navbar-light">
+        <nav id="navbar-ex" className="navbar navbar-expand-lg navbar-light App-header">
           <a className="navbar-brand pl-4" href="#">
             <img src={logo} width="25%"/>
           </a>
@@ -41,7 +42,18 @@ function App() {
             </ul>
           </div>
         </nav> 
-      </header>     
+
+      <div className="scroll-spy" data-spy="scroll" data-target="#navbar-ex" data-offset="0px">
+        <div id="work-exp"><WorkExp /></div>
+        <div id="projects"><Projects /></div>
+  <p>...</p>
+  <h5 id="skills">Item 3</h5>
+  <p>...</p>
+  <h4 id="articles">Item 4</h4>
+  <p>...</p>
+  <h4 id="contact">Item 5</h4>
+  <p>...</p>
+</div>    
     </div>
   );
 }

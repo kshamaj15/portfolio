@@ -1,0 +1,15 @@
+.tab-work-exp {
+    background: url('../../assets/home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+        padding-top: 5vh;     
+        img {
+            border: 5px solid #000000;
+            box-sizing: border-box;
+            border-radius: 110.5px;
+        }
+    }
+}
