@@ -9,7 +9,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { useEffect } from 'react';
 import WorkExp from './tabs/WorkExp/WorkExp';
 import Projects from './tabs/Projects/Projects';
-// import linkedin from './assets/linkedin.svg';
+import Experience from './tabs/Experience/Experience';
 
 function App() {
 
@@ -34,6 +34,7 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent" onClick={navClicked}>
             <ul className="navbar-nav mr-auto">
+              <li className="nav-item"><a className="nav-link" href="#intro">About</a></li>
               <li className="nav-item"><a className="nav-link" href="#work-exp">Experience</a></li>
               <li className="nav-item"><a className="nav-link" href="#projects">Personal Projects</a></li>
               <li className="nav-item"><a className="nav-link" href="#skills">Skillsets</a></li>
@@ -44,8 +45,9 @@ function App() {
         </nav> 
 
       <div className="scroll-spy" data-spy="scroll" data-target="#navbar-ex" data-offset="0px">
-        <div id="work-exp"><WorkExp /></div>
+        <div id="intro"><WorkExp /></div>
         <div id="projects"><Projects /></div>
+        <div id="work-exp"><Experience /></div>
   <p>...</p>
   <h5 id="skills">Item 3</h5>
   <p>...</p>
