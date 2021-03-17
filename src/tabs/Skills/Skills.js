@@ -19,9 +19,9 @@ const Skills = () => {
     return (<div className="mx-3 tab tab-skills">
         <h1>Skills</h1>
         <div className="tab-skills-list">
-            {skills.map(skill => {
+            {skills.map((skill, i) => {
                 return (
-                    <div className="tab-skills-list-item">
+                    <div className="tab-skills-list-item" key={i}>
                         <div>
                             <img src={Redux} height="30px" className="pr-3"/>
                             {skill.name}</div>

@@ -46,16 +46,13 @@ const Projects = () => {
         <div className="mx-3 tab tab-projects">
             <h1>Personal Projects</h1>
             <div className="tab-projects-list">
-            {projectData.map(project => {
+            {projectData.map((project, i) => {
                 return (
-                    <>
-                        <div className="tab-projects-list-item">
-                            <img src={imga} height="210px" style={{borderRadius: '38px'}} alt="img"/>
-                            <p>{project.description}</p>
-                            <h6>{project.title}</h6>
-                        </div>
-                        
-                    </>
+                    <div className="tab-projects-list-item" key={i}>
+                        <img src={imga} height="210px" style={{borderRadius: '38px'}} alt="img"/>
+                        <p>{project.description}</p>
+                        <h6>{project.title}</h6>
+                    </div>
                 )
             })}
             </div>

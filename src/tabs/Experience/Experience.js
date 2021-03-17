@@ -19,16 +19,13 @@ const Experience = () => {
         <div className="mx-3 tab tab-experience">
             <h1>Experience</h1>
             <div className="tab-experience-list">
-            {companies.map(company => {
+            {companies.map((company, i) => {
                 return (
-                    <>
-                        <div className="tab-experience-list-item">
-                            <img src={Dew} height="100px" style={{borderRadius: '38px'}} alt="img"/>
-                            <p>{company.name}</p>
-                            <p>{company.from} - {company.to}</p>
-                        </div>
-                        
-                    </>
+                    <div className="tab-experience-list-item"  key={i}>
+                        <img src={Dew} height="100px" style={{borderRadius: '38px'}} alt="img"/>
+                        <p>{company.name}</p>
+                        <p>{company.from} - {company.to}</p>
+                    </div>
                 )
             })}
             </div>
