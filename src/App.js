@@ -11,6 +11,8 @@ import WorkExp from './tabs/WorkExp/WorkExp';
 import Projects from './tabs/Projects/Projects';
 import Experience from './tabs/Experience/Experience';
 import Skills from './tabs/Skills/Skills';
+import Contacts from './tabs/Contacts/Contacts';
+import Education from './tabs/Education/Education';
 
 function App() {
 
@@ -39,7 +41,7 @@ function App() {
               <li className="nav-item"><a className="nav-link" href="#work-exp">Experience</a></li>
               <li className="nav-item"><a className="nav-link" href="#projects">Personal Projects</a></li>
               <li className="nav-item"><a className="nav-link" href="#skills">Skillsets</a></li>
-              <li className="nav-item"><a className="nav-link" href="#articles">Articles</a></li>
+              <li className="nav-item"><a className="nav-link" href="#education">Education</a></li>
               <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -50,13 +52,8 @@ function App() {
         <div id="projects"><Projects /></div>
         <div id="work-exp"><Experience /></div>
         <div id="skills"><Skills /></div>
-  <p>...</p>
-  <h5 id="skills">Item 3</h5>
-  <p>...</p>
-  <h4 id="articles">Item 4</h4>
-  <p>...</p>
-  <h4 id="contact">Item 5</h4>
-  <p>...</p>
+        <div id="education"><Education /></div>
+        <div id="contact"><Contacts /></div>
 </div>    
     </div>
   );
