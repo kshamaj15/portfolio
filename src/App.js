@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import WorkExp from './tabs/WorkExp/WorkExp';
 import Projects from './tabs/Projects/Projects';
 import Experience from './tabs/Experience/Experience';
+import Skills from './tabs/Skills/Skills';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
         <div id="intro"><WorkExp /></div>
         <div id="projects"><Projects /></div>
         <div id="work-exp"><Experience /></div>
+        <div id="skills"><Skills /></div>
   <p>...</p>
   <h5 id="skills">Item 3</h5>
   <p>...</p>
