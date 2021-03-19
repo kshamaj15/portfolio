@@ -4,7 +4,7 @@ import homeImg from '../../assets/photo.jpg';
 
 const WorkExp = () => {
     return (
-        <div className="mx-3 tab tab-work-exp" style={{height: '100vh'}}>
+        <div className="mx-3 tab tab-work-exp" style={{height: '97vh'}}>
           <div className="intro">
             <img src={homeImg} alt="Kshama Jain"/>
             <p>My name is</p>

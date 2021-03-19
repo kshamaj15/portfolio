@@ -1,5 +1,9 @@
 $dark: #0a0a0a;
 
+.navbar {
+    padding: 0 !important;
+}
+
 .App {
         &-header {
         position: sticky !important;
@@ -8,20 +12,24 @@ $dark: #0a0a0a;
         box-shadow: 4px 4px 8px 1px #686686;
     }
     .nav-link {
-        color: #fff !important;
+        color: #aaa !important;
         font-size: 20px;
         padding: 1rem !important;
+        border-bottom: 0.3rem solid $dark;
         &:active{
             font-size: 20px;
+            color: #fff !important;
             border-bottom: 0.3rem solid #fff;
         }
         &:hover{
             font-size: 20px;
-            border-bottom: 0.3rem solid #fff;
+            color: #fff !important;
+            border-bottom: 0.3rem solid $dark;
         }
     }
     .nav-link.active {
         font-size: 20px;
+        color: #fff !important;
         border-bottom: 0.3rem solid #fff;
     }
     
