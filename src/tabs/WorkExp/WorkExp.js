@@ -1,6 +1,6 @@
 import React from 'react';
 import './WorkExp.scss';
-import homeImg from '../../assets/photo.jpg';
+import homeImg from '../../assets/mainphotu.jpg';
 
 const WorkExp = () => {
     return (

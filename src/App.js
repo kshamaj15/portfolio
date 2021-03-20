@@ -1,11 +1,6 @@
 import './App.scss';
-import linkedin from './assets/linkedin.svg';
-import instagram from './assets/instagram.svg';
-import gmail from './assets/gmail.svg';
-import github from './assets/github.svg';
 import logo from './assets/logo.png';
 import $ from 'jquery'; 
-import Avatar from '@material-ui/core/Avatar';
 import { useEffect } from 'react';
 import WorkExp from './tabs/WorkExp/WorkExp';
 import Projects from './tabs/Projects/Projects';
