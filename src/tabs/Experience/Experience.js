@@ -22,7 +22,7 @@ const Experience = () => {
             {companies.map((company, i) => {
                 return (
                     <div className="tab-experience-list-item"  key={i}>
-                        <img src={Dew} height="100px" style={{borderRadius: '38px'}} alt="img"/>
+                        <img src={company.logo} height="100px" style={{borderRadius: '38px'}} alt="img"/>
                         <p>{company.name}</p>
                         <p>{company.from} - {company.to}</p>
                     </div>
