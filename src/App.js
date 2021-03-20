@@ -33,8 +33,8 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent" onClick={navClicked}>
             <ul className="navbar-nav mr-auto">
               <li className="nav-item"><a className="nav-link" href="#intro">About</a></li>
-              <li className="nav-item"><a className="nav-link" href="#work-exp">Experience</a></li>
               <li className="nav-item"><a className="nav-link" href="#projects">Personal Projects</a></li>
+              <li className="nav-item"><a className="nav-link" href="#work-exp">Experience</a></li>
               <li className="nav-item"><a className="nav-link" href="#skills">Skillsets</a></li>
               <li className="nav-item"><a className="nav-link" href="#education">Education</a></li>
               <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
