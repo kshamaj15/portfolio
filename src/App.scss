@@ -1,7 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    // font-family: 'Merriweather', serif;
+    font-family: 'Nunito', sans-serif;
+    // font-family: 'Josefin Sans', cursive;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif
+}
+
+h1 {
+    font-family: 'Josefin Sans', cursive;
+    font-weight: 800 !important;
+} 
+
 $dark: #0a0a0a;
 
 .navbar {
     padding: 0 !important;
+    z-index: 2;
 }
 
 .App {

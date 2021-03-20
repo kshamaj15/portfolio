@@ -6,11 +6,15 @@ import './Experience.scss';
 const Experience = () => {
     const [companies, setCompanies] = useState([{
         name: 'Dew Solutions',
+        designation: 'Software Engineer',
+        url: 'https://www.dewsolutions.in/',
         from: 'April 2020',
         to: 'present',
         logo: Dew
     },{
         name: 'Wipro',
+        url: 'https://www.wipro.com/',
+        designation: 'Project Engineer',
         from: 'July 2018',
         to: 'March 2020',
         logo: Wipro
@@ -21,10 +25,11 @@ const Experience = () => {
             <div className="tab-experience-list">
             {companies.map((company, i) => {
                 return (
-                    <div className="tab-experience-list-item"  key={i}>
-                        <img src={company.logo} height="100px" style={{borderRadius: '38px'}} alt="img"/>
-                        <p>{company.name}</p>
-                        <p>{company.from} - {company.to}</p>
+                    <div className="tab-experience-list-item p-4"  key={i}>
+                        <a href={company.url} target="_blank"><img src={company.logo} height="100px" style={{borderRadius: '38px'}} alt="img"/></a>
+                        <strong>{company.name}</strong>
+                        <span>{company.designation}</span>
+                        <span>{company.from} - {company.to}</span>
                     </div>
                 )
             })}

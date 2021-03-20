@@ -7,9 +7,9 @@ const WorkExp = () => {
         <div className="mx-3 tab tab-work-exp" style={{height: '97vh'}}>
           <div className="intro">
             <img src={homeImg} alt="Kshama Jain"/>
-            <p>My name is</p>
-            <h1>KSHAMA JAIN</h1>
-            <p>Full Stack Developer</p>
+            <strong>My name is</strong>
+            <h1>Kshama Jain</h1>
+            <strong>Full Stack Developer</strong>
           </div>
         </div>
     )
