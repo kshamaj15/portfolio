@@ -9,7 +9,7 @@ const WorkExp = () => {
             <img src={homeImg} alt="Kshama Jain"/>
             <strong>My name is</strong>
             <h1>Kshama Jain</h1>
-            <strong>Full Stack Developer</strong>
+            <strong>Front End Developer</strong>
           </div>
         </div>
     )
