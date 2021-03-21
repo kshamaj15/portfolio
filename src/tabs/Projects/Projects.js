@@ -15,14 +15,14 @@ const Projects = () => {
         image: gridGame
         },{
         title: 'Burger App',
-        codeUrl: 'https://github.com/kshamaj15/ui-grid-game',
+        codeUrl: 'https://github.com/kshamaj15/React-Burger-App',
         hostedOn: 'https://github.com/kshamaj15/ui-grid-game',
         description: 'This is an app for customised burger with your favorite ingredients',
         image: burger
     },{
         title: 'Portfolio',
-        codeUrl: 'https://github.com/kshamaj15/ui-grid-game',
-        hostedOn: 'https://github.com/kshamaj15/ui-grid-game',
+        codeUrl: 'https://github.com/kshamaj15/portfolio',
+        hostedOn: 'https://kshamaj15.github.io/portfolio/',
         description: 'This is my portpholio, where you can find my complete professional profile',
         image: portfolio
     }]);
