@@ -6,9 +6,11 @@ import js from '../../assets/skillsLogo/js.png';
 import html from '../../assets/skillsLogo/html.png';
 import css from '../../assets/skillsLogo/css.png';
 import bootstrap from '../../assets/skillsLogo/bootstrap.png';
+import ts from '../../assets/skillsLogo/typescript.png';
 import scss from '../../assets/skillsLogo/scss.png';
 import jquery from '../../assets/skillsLogo/jquery.webp';
 import node from '../../assets/skillsLogo/node.jpeg';
+import express from '../../assets/skillsLogo/express.png';
 import './Skills.scss';
 
 const Skills = () => {
@@ -17,12 +19,14 @@ const Skills = () => {
         // { name: 'Redux', expertise: '6', image: redux, color: '#764abc'},
         { name: 'Angular', expertise: '6', image: angular, color: '#a6120d'},
         { name: 'JavaScript', expertise: '9', image: js, color: '#f0db4f'},
+        { name: 'TypeScript', expertise: '8', image: ts, color: '#007acc'},
         { name: 'HTML', expertise: '7', image: html, color: '#e34c26'},
         { name: 'CSS', expertise: '8', image: css, color: '#2965f1'},
         { name: 'Bootstrap', expertise: '7', image: bootstrap, color: '#563d7c'},
         { name: 'SCSS', expertise: '8', image: scss, color: '#cd6799'},
         { name: 'jQuery', expertise: '6', image: jquery, color: '#0868AC'},
-        { name: 'Node JS', expertise: '5', image: node, color: '#3C873A'}
+        // { name: 'Node JS', expertise: '5', image: node, color: '#3C873A'},
+        // { name: 'Express', expertise: '5', image: express, color: '#000'}
     ]);
 
     return (<div className="mx-3 tab tab-skills">

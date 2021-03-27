@@ -13,7 +13,7 @@ const Projects = () => {
         hostedOn: 'https://github.com/kshamaj15/ui-grid-game',
         description: 'This is a game where you have given N X N matrix with one empty block and you need to sort the numbers by moving the empty block',
         image: gridGame
-        },{
+    },{
         title: 'Burger App',
         codeUrl: 'https://github.com/kshamaj15/React-Burger-App',
         hostedOn: 'https://github.com/kshamaj15/ui-grid-game',
